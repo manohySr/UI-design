@@ -1,0 +1,188 @@
+body {
+  margin: 0;
+  height: 100vh;
+  font-family: sans-serif;
+}
+
+body h1 {
+  font-weight: 500;
+}
+
+@media only screen and (min-width: 920px) {
+  body .grid-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 60% auto;
+        grid-template-columns: 60% auto;
+  }
+  body .grid-container .left {
+    text-align: left;
+    height: 100%;
+  }
+  body .grid-container .right {
+    height: 100%;
+    margin: 0;
+    padding: 50px 20px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body .proto-container {
+    -webkit-clip-path: inset(0 40% 0 0);
+            clip-path: inset(0 40% 0 0);
+    position: absolute;
+    top: 30vh;
+    height: 70%;
+    z-index: 0;
+    width: 100%;
+    pointer-events: none;
+  }
+  body .proto-container .proto {
+    border: 3px solid rgba(245, 245, 245, 0.123);
+    width: 20%;
+    height: 80%;
+    float: left;
+    margin-left: 20px;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  body .grid-container .right form {
+    width: 80%;
+  }
+}
+
+.grid-container {
+  height: 100%;
+}
+
+.grid-container .left {
+  height: 300px;
+  margin: 0;
+  padding: 50px 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: azure;
+  background: -webkit-gradient(linear, left top, right top, from(#1e0033), to(#9900cc));
+  background: linear-gradient(to right, #1e0033, #9900cc);
+  font-family: sans-serif;
+}
+
+.grid-container .left .content {
+  padding-left: 40px;
+  padding-right: 40px;
+  width: 80%;
+}
+
+.grid-container .left .content h1 span {
+  color: black;
+}
+
+.grid-container .left .content .button {
+  background-color: #313131;
+  padding: 15px 32px;
+  text-align: center;
+  font-size: 16px;
+  width: 100px;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.grid-container .left .content .button a {
+  text-decoration: none;
+  color: azure;
+}
+
+.grid-container .left .content .button:hover {
+  background: #ff96ad;
+  -webkit-box-shadow: 0 0 5px #ff96ad, 0 0 25px #ff96ad, 0 0 50px #ff96ad, 0 0 200px #ff96ad;
+          box-shadow: 0 0 5px #ff96ad, 0 0 25px #ff96ad, 0 0 50px #ff96ad, 0 0 200px #ff96ad;
+}
+
+.grid-container .right {
+  text-align: left;
+  height: 400px;
+  margin: 0;
+  padding: 0 30px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: linear-gradient(to right, #1e0033, #9900cc);
+  background: azure;
+  font-family: sans-serif;
+}
+
+.grid-container .right form {
+  padding: 50px 50px;
+}
+
+.grid-container .right form input[type=email], .grid-container .right form input[type=submit], .grid-container .right form input[type=text], .grid-container .right form textarea {
+  width: calc(100% - 30px);
+  padding: 12px 12px;
+  margin: 8px 0;
+  display: inline-block;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.grid-container .right form input[type=submit] {
+  background-color: #313131;
+  color: azure;
+  padding: 15px 32px;
+  font-size: 16px;
+  width: 100%;
+  -webkit-transition: 1s;
+  transition: 1s;
+  border: none;
+}
+
+.grid-container .right form input[type=submit]:hover {
+  background: #ff96ad;
+  -webkit-box-shadow: 0 0 5px #ff96ad, 0 0 25px #ff96ad, 0 0 50px #ff96ad, 0 0 200px #ff96ad;
+          box-shadow: 0 0 5px #ff96ad, 0 0 25px #ff96ad, 0 0 50px #ff96ad, 0 0 200px #ff96ad;
+}
+
+.grid-container .right form textarea:focus {
+  border: 3px solid #555;
+}
+
+.grid-container .right form input:focus {
+  border: 3px solid #555;
+}
+
+.grid-container .right form .etoile {
+  color: red;
+}
+
+.logo {
+  position: absolute;
+  font-family: sans-serif;
+  font-weight: 100;
+  top: 20px;
+  left: 30px;
+  color: white;
+  font-size: 20px;
+  padding: 3px 10px;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+/*# sourceMappingURL=style.css.map */

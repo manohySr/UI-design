@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="style.css">
+	<title>Hello one page</title>
+</head>
+<body>
+	<div class="proto-container">
+		<div class="proto"></div>
+		<div class="proto"></div>
+		<div class="proto"></div>
+		<div class="proto"></div>
+	</div>
+	<div class="logo">Protas</div>
+	<div class="grid-container">
+		<div class="left">
+			<div class="content">
+				<h1>Hello World, I'm<span> ManohySR</span></h1>
+				<p>Do you want to build a website, I can do that for you. I am a fullstack develloper. <br><br>[HTML, CSS, JS, DJANGO]</p>
+				<div class="button">
+					<a href="page.html">Get my CV</a>
+				</div>
+			</div>
+		</div>
+		<div class="right">
+			<form action="">
+				<label for="email">Email<span class="etoile">*</span></label>
+				<input type="email">
+				<label for="text">Object<span class="etoile">*</span></label>
+				<input type="text">
+				<label for="message">Message me<span class="etoile">*</span></label>
+				<textarea name="" id="" cols="30" rows="5"></textarea>
+				<input type="submit" value="Send">
+			</form>
+		</div>
+	</div>
+	<script>
+		let left = document.querySelector('.left');
+		let content = document.querySelector('.content');
+		let protos = document.querySelectorAll('.proto');
+
+		left.addEventListener('mousemove', (event) => {
+			let move = (event.clientX * 0.01);
+			let move2 = (event.clientX * 0.003);
+			content.style.transform = `translateX(${move2}%)`;
+			protos.forEach((proto) => {
+				proto.style.transform = `translateX(-${move}%)`;
+			})
+			
+		})
+	</script>
+</body>
+</html>
