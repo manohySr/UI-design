@@ -1,1 +1,1 @@
-# javascript_game
+# javascript_learning
